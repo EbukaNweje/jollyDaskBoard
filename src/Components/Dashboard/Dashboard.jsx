@@ -108,7 +108,7 @@ const Dashboard = () => {
 
       const handleLogOut = () =>{
           localStorage.removeItem("UserId");
-        window.location.href = "https://www.thebitpay.vercel.app/"
+        window.location.href = "https://bitpay-capital.vercel.app/"
       }
       const handleAdmin = () =>{
         nav(`UserUpdate`)

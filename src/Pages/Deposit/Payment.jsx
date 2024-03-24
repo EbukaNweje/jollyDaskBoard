@@ -31,11 +31,11 @@ const Payment = () => {
     // console.log(depositData)
 
     const [state, setState] = useState({
-        value: `${paymentname === "BITCOINP PAYMENT"? ("bc1qfs3vqypa89nlf668m7uvanfsxzqr8yn34h888s"): paymentname === "ETHEREUM PAYMENT"? ("0xd4B4E16d815C062F395AD76108a87C822b39b16c"): paymentname ==="USDT PAYMENT"? ("0xd4B4E16d815C062F395AD76108a87C822b39b16c"):"Chosse a Payment Method"}`,
+        value: `${paymentname === "BITCOINP PAYMENT"? ("12RqjAxmfkMdSnzyqmHjt5cE4dV6YhhaaY"): paymentname === "ETHEREUM PAYMENT"? ("0xdcf3d9a346ad2435bd6e317751d4a5d29aea4d68"): paymentname ==="USDT PAYMENT"? ("TUTsfznABB1usjPUt3zDvt81oD4X5XXH8x"):"Chosse a Payment Method"}`,
         copied: false,
       });
 
-      const url = `https://chi-backend.vercel.app/api/sendpayment/${id}`
+      const url = `https://jollybackend.onrender.com/api/sendpayment/${id}`
       
       const payNow = ()=> {
         setButtonDisabled(true)
@@ -85,7 +85,7 @@ const Payment = () => {
                                 </div>
                                  </CopyToClipboard>
                             </div>
-                            <h5>Network Type:<span>{paymentname=== "BITCOINP PAYMENT"? "BTC" : paymentname=== "ETHEREUM PAYMENT"? "ETH" :  paymentname === "USDT PAYMENT" ? "USDT" : paymentname=== "ETHEREUM PAYMENT"? "ETH" :  paymentname === "BNB PAYMENT" ? "BNB": null}</span></h5>
+                            <h5>Network Type:<span>{paymentname=== "BITCOINP PAYMENT"? "BTC" : paymentname=== "ETHEREUM PAYMENT"? "ETH" :  paymentname === "USDT PAYMENT" ? "USDT Trc20 " : paymentname=== "ETHEREUM PAYMENT"? "ETH" :  paymentname === "BNB PAYMENT" ? "BNB": null}</span></h5>
                         </div>
                         <div className="DepPaymentContentD">
                             <p>Upload Payment proof after payment.</p>

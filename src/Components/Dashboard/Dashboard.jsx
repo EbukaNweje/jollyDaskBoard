@@ -47,7 +47,7 @@ const Dashboard = () => {
     
     const handleGetUser = async () => {
         
-        fetch(`https://chi-backend.vercel.app/api/userdata/${id}`, {
+        fetch(`https://jolly-back-end.vercel.app/api/userdata/${id}`, {
             method: 'GET',
         })
         .then(response=> response.json())

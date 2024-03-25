@@ -126,7 +126,6 @@ const UpdateWallet = ({Display}) => {
             <InputData>
             <label>Account Balance: </label>
             <input placeholder='Amount' onChange={(e)=> setAccountBalance(e.target.value)}/>
-            {/* <Button onClick={(e)=>upddatebtn(props._id,e)} title={"lastDeposit"}>update</Button> */}
             <span>${props.accountBalance}</span>
           </InputData>
 
